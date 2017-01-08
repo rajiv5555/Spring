@@ -10,6 +10,16 @@ package Day1;
 public class Bata implements Shoe{
 	
 	int price;
+	
+	
+
+	public Bata() {
+		
+	}
+
+	public Bata(int price) {
+		this.price = price;
+	}
 
 	@Override
 	public void makeshoecomfortable() {

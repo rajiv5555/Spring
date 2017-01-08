@@ -35,9 +35,19 @@ public class AnnShoe {
     //autowire by type comment  one show bean from appconfig otherwise it will give error
     //s.s1.makeshoecomfortable();
     //Autowire by name
-    s.s3.lookshoegood();
+    //s.s3.lookshoegood();
     
+    System.out.println("=== array of shoe and parent child protype and singleton ====");
+    for(int i=0;i<10;i++){
+    	s.s2[i].lookshoegood();
+    	System.out.println(s.s2[i].getPrice());
+    }
     
+    shoeshowroom s1=(shoeshowroom) context.getBean("ssr");
+    for(int i=0;i<10;i++){
+    	s1.s2[i].lookshoegood();
+    	System.out.println(s1.s2[i].getPrice());
+    }
 	}
 
 }

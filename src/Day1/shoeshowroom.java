@@ -19,7 +19,13 @@ public class shoeshowroom {
 	//Shoe s2;
 	
 	//autowire by name
+	//@Autowired
+	//@Qualifier("newshoe")
+	//Shoe s3;
+	
+	//array of shoe autowiring
 	@Autowired
-	@Qualifier("newshoe")
-	Shoe s3;
+	@Qualifier("newshoearr")
+	Shoe []s2=new Bata[10];
+	
 }
